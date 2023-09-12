@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, red, yellow, blue); 
+}
+.navbar
+{
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: brown;
+    border: 2px solid black;
+    border-left: none;
+    margin-left: 5px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+}
+.container
+{
+    position: relative;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.drop
+ {
+    background-color:black;
+    width: 300px;
+    height: 300px;
+    border: 4px dotted blue;
+    opacity: 0.5;
+    margin: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form 
+{
+    margin: 10px;
+    margin-bottom: 15px;
+    border: 1px dotted gray;
+    padding: 5px;
+    display: inline;
+}
+
+#addUser
+{
+    background-color: lightgray;
+    margin : 100px;
+    padding: 10px;
+    /* display: inline;  */
+    width: 300px; 
+    height: 250px;
+    opacity: 0.8;  
+}
+
+label
+{
+    margin-right: 5px;
+    display: block;
+}
+
+.hover 
+{
+    /* background-color: black; */
+    border: 1px solid yellow;
+}
+
+
+.fetch
+{
+    margin: 10px;
+    
+}
+#animate{
+    position: relative;
+    background-color: chocolate;
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+    }
+    .container
+    {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+    }
+}

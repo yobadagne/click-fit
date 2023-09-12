@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/filedrop/1.4.10/filedrop.min.js"></script> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css">
+
+  <title>click fit</title>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left"><a href=""><b>Ed Fittness</b></a></div>
+
+    <div class="right">
+      <a href=""><b>Login</b></a>
+      <a href=""><b>Register</b></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="description">
+      <h2>We are the best fitness center , come and visit</h2>
+    </div>
+    <div class="imagecontainer">
+
+      <div class="drop" id="drop">Drag and drop an image here</div>
+
+      <!-- image upload form -->
+      <form id="form" enctype="multipart/form-data">
+        <input type="file" id="imagefile" name="image" />
+        <input id="submitimage" type="submit" />
+      </form>
+    </div>
+    <div class="adduserconatiner">
+
+      <!-- add user -->
+      <form id="addUser">
+        <P><b>Add a new user</b></P>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br>
+
+        <label for="role1">Trainer</label>
+        <input type="radio" name="role" id="role1" value="Trainee"><br>
+
+        <label for="role2">Trainee</label>
+        <input type="radio" name="role" id="role2" value="Trainer"><br>
+
+        <!-- <label for="submituser">Add User</label> -->
+        <input type="submit" id="submituser">
+      </form>
+    </div>
+  </div>
+
+  <div id="animate">Hello, this is some animation</div>
+  <div class="fetch">
+    <p>Data fetched from API:</p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
